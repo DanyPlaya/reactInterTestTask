@@ -1,3 +1,8 @@
+import { usePostsQuery } from "@/entities/post";
+import { PostList } from "@/widgets/postList";
+
 export const MainPage = () => {
-  return <div>MainPage</div>;
+  const { data: posts } = usePostsQuery();
+
+  return <div>{posts ? <PostList posts={posts} /> : null}</div>;
 };
