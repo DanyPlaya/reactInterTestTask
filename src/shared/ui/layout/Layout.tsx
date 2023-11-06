@@ -17,7 +17,6 @@ export const Layout = (props: LayoutProps) => {
       <div className={cls.container}>
         <div className={cls.content}>
           <Outlet />
-          <ScrollRestoration />
         </div>
       </div>
       <footer className={cls.footer}>
@@ -25,6 +24,7 @@ export const Layout = (props: LayoutProps) => {
           https://github.com/DanyPlaya/reactInterTestTask
         </a>
       </footer>
+      <ScrollRestoration />
     </div>
   );
 };
